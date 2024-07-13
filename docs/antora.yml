@@ -1,0 +1,6 @@
+name: gitlab-scheduled-merge
+title: GitLab Scheduled Merge
+version: master
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/partials/nav.adoc

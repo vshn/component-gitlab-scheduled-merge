@@ -1,0 +1,4 @@
+parameters:
+  gitlab_scheduled_merge:
+    =_metadata: {}
+    namespace: syn-gitlab-scheduled-merge

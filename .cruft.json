@@ -1,0 +1,31 @@
+{
+  "template": "https://github.com/projectsyn/commodore-component-template.git",
+  "commit": "2ae1bc3383f211eee5f20a963f5ac74725d85d5b",
+  "checkout": "main",
+  "context": {
+    "cookiecutter": {
+      "name": "GitLab Scheduled Merge",
+      "slug": "gitlab-scheduled-merge",
+      "parameter_key": "gitlab_scheduled_merge",
+      "test_cases": "defaults",
+      "add_lib": "n",
+      "add_pp": "n",
+      "add_golden": "y",
+      "add_matrix": "y",
+      "add_go_unit": "n",
+      "automerge_patch": "y",
+      "automerge_patch_v0": "n",
+      "automerge_patch_regexp_blocklist": "",
+      "automerge_patch_v0_regexp_allowlist": "",
+      "automerge_minor_regexp_allowlist": "",
+      "auto_release": "y",
+      "copyright_holder": "VSHN AG <info@vshn.ch>",
+      "copyright_year": "2024",
+      "github_owner": "vshn",
+      "github_name": "component-gitlab-scheduled-merge",
+      "github_url": "https://github.com/vshn/component-gitlab-scheduled-merge",
+      "_template": "https://github.com/projectsyn/commodore-component-template.git"
+    }
+  },
+  "directory": null
+}

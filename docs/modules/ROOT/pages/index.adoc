@@ -1,0 +1,5 @@
+= GitLab Scheduled Merge
+
+gitlab-scheduled-merge is a Commodore component to manage GitLab Scheduled Merge.
+
+See the xref:references/parameters.adoc[parameters] reference for further details.
