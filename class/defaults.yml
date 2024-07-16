@@ -1,4 +1,21 @@
 parameters:
   gitlab_scheduled_merge:
-    =_metadata: {}
+    =_metadata:
+      multi_instance: true
+
     namespace: syn-gitlab-scheduled-merge
+    namespaceLabels: {}
+
+    images:
+      scheduledmerge:
+        registry: ghcr.io
+        repository: vshn/gitlab-scheduled-merge
+        tag: v0.1.1
+
+    gitlabAPI: gitlab.com/api/v4
+    accessToken: ?{vaultkv:${cluster:tenant}/${cluster:name}/gitlab-scheduled-merge/${_instance}/accessToken}
+
+    resources:
+      requests:
+        cpu: 5m
+        memory: 16Mi

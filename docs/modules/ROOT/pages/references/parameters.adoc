@@ -10,6 +10,45 @@ default:: `syn-gitlab-scheduled-merge`
 
 The namespace in which to deploy this component.
 
+== `namespaceLabels`
+
+[horizontal]
+type:: dictionary
+default:: `{}`
+
+Labels to apply to namespace.
+
+== `resources`
+
+[horizontal]
+type:: dictionary
+default::
++
+[source,yaml]
+----
+requests:
+  cpu: 5m
+  memory: 16Mi
+----
+
+Configure resource requests and limits.
+
+== `gitlabAPI`
+
+[horizontal]
+type:: string
+default:: `gitlab.com/api/v4`
+
+API URL to the GitLab instance.
+
+== `accessToken`
+
+[horizontal]
+type:: string
+default:: `?{vaultkv:${cluster:tenant}/${cluster:name}/scheduled-merge/${_instance}/accessToken}`
+
+AccessToken for the GitLab instance.
+See https://syn.tools/commodore/reference/concepts.html#_secret_references[ProjectSyn Documentation] for reference.
 
 == Example
 
